@@ -24,7 +24,7 @@ function lakukanLooping(arrPegawai) {
       Contoh: ["Aisyah Nirmala", "Mansur Faisal", ...]
   */
   let hasilLooping = null;
-  let fullName = arrayObjectPegawai.map((res) => {
+  let fullName = dataYangAkanDilooping.map((res) => {
     return `${res.namaDepan} ${res.namaBelakang}`;
   });
   hasilLooping = fullName;
@@ -34,7 +34,7 @@ function lakukanLooping(arrPegawai) {
       yang berisi jumlah pria dari masing masing pegawai
   */
   let jumlahPria = null;
-  let totalMale = arrayObjectPegawai.filter((res) => {
+  let totalMale = dataYangAkanDilooping.filter((res) => {
     return res.jenisKelamin === "M";
   });
   jumlahPria = totalMale.length;
@@ -44,7 +44,7 @@ function lakukanLooping(arrPegawai) {
       yang berisi jumlah wanita dari masing masing pegawai
   */
   let jumlahWanita = null;
-  let totalFemale = arrayObjectPegawai.filter((res) => {
+  let totalFemale = dataYangAkanDilooping.filter((res) => {
     return res.jenisKelamin === "F";
   });
   jumlahWanita = totalFemale.length;
